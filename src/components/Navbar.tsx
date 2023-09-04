@@ -21,28 +21,22 @@ const navLinks: NavLink[] = [
     }
 ]
 
-const Navbar: React.FC = function () {
+const Navbar: React.FC = function() {
     return (
-        <>
-            <div>
-                <div>
-                    <Link href="/">
-                        <h1>Capture</h1>
-                    </Link>
-                    <ul>
-                        <li>
-                            <Link href="Home"></Link>
-                        </li>
-                        <li>
-                            <Link href="Projects"></Link>
-                        </li>
-                        <li>
-                            <Link href="Contact Me"></Link>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </>
+        <header>
+            <nav className="Nav">
+                <ul className="flex flex-col gap-2 items-end justify-end">
+                {navLinks.map(navlink => (
+                    <li key={navlink.href}>
+                        <Link href={navlink.href}>
+                            {navlink.text}
+                        </Link>
+                    </li>
+                ))}
+                </ul>
+            </nav>
+        </header>
     )
 }
 
+export default Navbar
