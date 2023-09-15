@@ -7,7 +7,7 @@ const Layout = function({children}: React.PropsWithChildren) {
   return (
       <>
       <Navbar/>
-      <main>
+      <main className="flex flex-col h-screen">
           {children}
       </main>
       <Footer/>
