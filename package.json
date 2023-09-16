@@ -1,7 +1,12 @@
 {
-  "name": "tictactoe",
+  "name": "react_portfolio",
   "version": "0.1.0",
   "private": true,
+  "license": "\"license\": \"ISC\"",
+  "description": "My React Portfolio to show what I am capable of developing as an individual",
+  "main": "api/page.tsx",
+  "repository": "https://github.com/Pauldan1988/next-portfolio.git",
+  "author": "Paul Dangelo Jr <pdangelo1988@gmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

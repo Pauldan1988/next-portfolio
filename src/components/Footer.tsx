@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="flex flex-row gap-2 align-right">
-            <div>
+        <footer className="flex flex-row-reverse">
+            <div className="flex flex-wrap space-x-4">
                 <a className="flex flex-row">
                     <Link href="https://www.github.com/Pauldan1988">
                         <Image
@@ -18,7 +18,7 @@ export default function Footer() {
                     </Link>
                 </a>
                 <a className="flex flex-row">
-                    <Link href="https://www.linkedin.com/in/paul-dan-9a0b6b1b9/">
+                    <Link href="https://www.linkedin.com/in/paul-d-angelo-jr-431407257">
                         <Image
                             src="/linkedin.png"
                             alt="LinkedIn Logo"
