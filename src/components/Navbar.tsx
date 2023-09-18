@@ -21,19 +21,21 @@ const navLinks: NavLink[] = [
     }
 ]
 
-const Navbar: React.FC = function() {
+const Navbar: React.FC = function () {
     return (
         <header>
             <nav className="Nav">
-                <ul className="flex flex-row-reverse gap-2 py-8 pe-20">
-                {navLinks.map(navlink => (
-                    <li key={navlink.href}>
-                        <Link href={navlink.href}>
-                            {navlink.text}
-                        </Link>
-                    </li>
-                ))}
-                </ul>
+                <div className="flex flex-row-reverse justify-center gap-2 py-10 pe-30 align-items-center">
+                    <ul className="flex space-x-10 text-2xl">
+                        {navLinks.map(navlink => (
+                            <li key={navlink.href}>
+                                <Link href={navlink.href}>
+                                    {navlink.text}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </nav>
         </header>
     )
