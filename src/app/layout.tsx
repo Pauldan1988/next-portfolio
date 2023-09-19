@@ -3,15 +3,18 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import '../styles/globals.css'
 
-const Layout = function({children}: React.PropsWithChildren) {
+const Layout = function ({ children }: React.PropsWithChildren) {
   return (
-      <>
-      <Navbar/>
-      <main className="flex flex-col h-screen">
+    <html lang="en">
+      <head>
+        <Navbar />
+        <main className="flex flex-col h-screen">
           {children}
-      </main>
-      <Footer/>
-      </>
+        </main>
+        <Footer />
+      </head>
+    </html>
+
   )
 }
 
