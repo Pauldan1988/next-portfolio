@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="flex flex-row-reverse">
+        <footer className="flex flex-row-reverse bg-slate-400">
             <div className="flex flex-wrap space-x-4">
                 <a className="flex flex-row">
                     <Link href="https://www.github.com/Pauldan1988">
