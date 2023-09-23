@@ -25,7 +25,7 @@ const Navbar: React.FC = function () {
     return (
         <header>
             <nav className="Nav">
-                <div className="flex flex-row-reverse bg-slate-400 justify-center gap-2 py-10 pe-30 align-items-center">
+                <div className="flex flex-row-reverse bg-slate-400 justify-center   gap-2 py-10 pe-30 align-items-center">
                     <ul className="flex space-x-10 text-2xl">
                         {navLinks.map(navlink => (
                             <li key={navlink.href}>
